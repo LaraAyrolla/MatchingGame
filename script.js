@@ -11,7 +11,7 @@ document.addEventListener ('click', function (event){
     //get the class and id
     var classe = event.target.className;
     var id = event.target.id;
-    //testa se o clique ocorreu em uma das cartas
+    //checks if the click happened within the are of one of the cards
     if ((classe=='a'||classe=='b'||classe=='c'||classe=='d'||classe=='e'||classe=='f')&&(id!=id2)){
         //counter to check if it's the first or second card of the round
         count++;
@@ -29,13 +29,13 @@ document.addEventListener ('click', function (event){
             //changes the number os attempts
             document.getElementById("t2").innerHTML = attempts;
             //opens the test function
-            testar(id);
+            checkCards(id);
         }
     }
 });
 
-//test function (tests if the two cards turned up are the same)
-function testar(id){
+//check function (checks if the two cards turned up are the same)
+function checkCards(id){
     if(card1 == card2){
         //if the round pair is correct, open the function to increase the correct pairs number
         increaseCorrectPairs()	
