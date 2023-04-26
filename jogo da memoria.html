@@ -8,16 +8,16 @@
 	<body>
 		<!-- div com os corações de vida -->
 		<div class="corazon">
-			<img src="corazon.png" class="co2" id="9">
-			<img src="corazon.png" class="co2" id="8">
-			<img src="corazon.png" class="co2" id="7">
-			<img src="corazon.png" class="co2" id="6">
-			<img src="corazon.png" class="co2" id="5">
-			<img src="corazon.png" class="co2" id="4">
-			<img src="corazon.png" class="co2" id="3">
-			<img src="corazon.png" class="co2" id="2">
-			<img src="corazon.png" class="co2" id="1">
-			<img src="corazon.png" class="co2" id="0">
+			<img src="assets/corazon.png" class="co2" id="9">
+			<img src="assets/corazon.png" class="co2" id="8">
+			<img src="assets/corazon.png" class="co2" id="7">
+			<img src="assets/corazon.png" class="co2" id="6">
+			<img src="assets/corazon.png" class="co2" id="5">
+			<img src="assets/corazon.png" class="co2" id="4">
+			<img src="assets/corazon.png" class="co2" id="3">
+			<img src="assets/corazon.png" class="co2" id="2">
+			<img src="assets/corazon.png" class="co2" id="1">
+			<img src="assets/corazon.png" class="co2" id="0">
 			<br><br><br><br><br>
 		</div>
 		
@@ -36,22 +36,22 @@
 		<br><br><br><br><br>
 		<div class="div1">
 			<br>
-			<img src="fundo.png" id="a" class="a">
-			<img src="fundo.png" id="b" class="b">
-			<img src="fundo.png" id="c" class="c">
-			<img src="fundo.png" id="d" class="d">
+			<img src="assets/fundo.png" id="a" class="a">
+			<img src="assets/fundo.png" id="b" class="b">
+			<img src="assets/fundo.png" id="c" class="c">
+			<img src="assets/fundo.png" id="d" class="d">
 		</div>
 		<div class="div1">
-			<img src="fundo.png" id="e" class="e">
-			<img src="fundo.png" id="f" class="f">
-			<img src="fundo.png" id="a2" class="a">
-			<img src="fundo.png" id="b2" class="b">
+			<img src="assets/fundo.png" id="e" class="e">
+			<img src="assets/fundo.png" id="f" class="f">
+			<img src="assets/fundo.png" id="a2" class="a">
+			<img src="assets/fundo.png" id="b2" class="b">
 		</div>
 		<div class="div1">
-			<img src="fundo.png" id="c2" class="c">
-			<img src="fundo.png" id="d2" class="d">
-			<img src="fundo.png" id="e2" class="e">
-			<img src="fundo.png" id="f2" class="f">
+			<img src="assets/fundo.png" id="c2" class="c">
+			<img src="assets/fundo.png" id="d2" class="d">
+			<img src="assets/fundo.png" id="e2" class="e">
+			<img src="assets/fundo.png" id="f2" class="f">
 		</div>
 		
 	</body>
@@ -80,11 +80,11 @@
 				//primeira carta da vez
 				nome1 = classe;
 				id2 = id;
-				document.getElementById(id).src= classe+".png";
+				document.getElementById(id).src= "assets/"+classe+".png";
 			}else if(cont==2){
 				//segunda carta da vez
 				tentativas++;
-				document.getElementById(id).src = classe+".png";
+				document.getElementById(id).src = "assets/"+classe+".png";
 				cont = 0;
 				nome2 = classe;
 				//muda o número de tentativas
@@ -112,8 +112,8 @@
 			vida--;
 			//vira as cartas novamente
 			setTimeout(function(){
-				document.getElementById(id).src="fundo.png";
-				document.getElementById(id2).src="fundo.png";
+				document.getElementById(id).src="assets/fundo.png";
+				document.getElementById(id2).src="assets/fundo.png";
 			}, 750);
 			//abre a função contadora de vidas
 			vidas();
