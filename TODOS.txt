@@ -2,3 +2,6 @@
     #If you click fast enough, 3 cards will turn up and the 3rd will be ignored by the code, not turning down at the end of the round.
 #TODO - Stop the event checker after "game over" or "you win".
     #If the user clicks on the cards after winning or losing the game, the events will still be register, changing the cards, attempts, lives, and messages.
+
+#TODO - Improve the design.
+    #Position the elements on the page in a better way.

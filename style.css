@@ -1,8 +1,8 @@
-.heart{
+.lives{
     float: left;
 }
 
-.co2{
+.life{
     float: left;
     width: 90px;
     height: 90px;
