@@ -37,61 +37,42 @@ document.addEventListener ('click', function (event){
 //test function (tests if the two cards turned up are the same)
 function testar(id){
     if(card1 == card2){
-        //if the round pair is correct
-        pairs++;
-        if (pairs==6){
-            //if the 6 pairs are facing up
-            document.getElementById("div2").innerText = "VOCÊ GANHOU!";
-            document.getElementById("div2").style.color = "green";
-            document.getElementById("div2").style.border = "thick dashed green";
-            document.getElementById("div2").style.padding = "30px";
-        }		
+        //if the round pair is correct, open the function to increase the correct pairs number
+        increaseCorrectPairs()	
     }else{
-        //if the round pair is wrong
-        lives--;
-        //make the cards face down again
+        //if the round pair is wrong, make the cards face down again
         setTimeout(function(){
             document.getElementById(id).src="assets/background.png";
             document.getElementById(id2).src="assets/background.png";
         }, 750);
-        //open the function to count the lives
-        countLives();
+        //and open the function to reduce the number of lives
+        reduceLives();
     }
 }
 
 //function to count lives (tests the number of lives and reduces the hearts if needed)
-function countLives(){
-    if(lives==9){
-        document.getElementById("9").style.display="none";
-    }
-    if(lives==8){
-        document.getElementById("8").style.display="none";
-    }
-    if(lives==7){
-        document.getElementById("7").style.display="none";
-    }
-    if(lives==6){
-        document.getElementById("6").style.display="none";
-    }
-    if(lives==5){
-        document.getElementById("5").style.display="none";
-    }
-    if(lives==4){
-        document.getElementById("4").style.display="none";
-    }
-    if(lives==3){
-        document.getElementById("3").style.display="none";
-    }
-    if(lives==2){
-        document.getElementById("2").style.display="none";
-    }
-    if(lives==1){
-        document.getElementById("1").style.display="none";
-    }
+function increaseCorrectPairs(){
+    pairs++;
+
+    if (pairs==6){
+        //if the 6 pairs are facing up
+        document.getElementById("div2").innerText = "YOU WIN!";
+        document.getElementById("div2").style.color = "green";
+        document.getElementById("div2").style.border = "thick dashed green";
+        document.getElementById("div2").style.padding = "30px";
+    }	
+}
+
+//function to count lives (tests the number of lives and reduces the hearts if needed)
+function reduceLives(){
+    lives--;
+
+    document.getElementById(String(lives)).style.display="none";
+
     if(lives==0){
         document.getElementById("0").style.display="none";
         //if the lives end
-        document.getElementById("div2").innerText = "VOCÊ PERDEU!";
+        document.getElementById("div2").innerText = "GAME OVER!";
         document.getElementById("div2").style.color = "red";
         document.getElementById("div2").style.border = "thick dashed red";
         document.getElementById("div2").style.padding = "30px";
