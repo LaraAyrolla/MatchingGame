@@ -1,0 +1,48 @@
+.heart{
+    float: left;
+}
+
+.co2{
+    float: left;
+    width: 90px;
+    height: 90px;
+    margin-left: 40px;
+}
+
+.div1{
+    clear: left;
+}
+
+img{
+    height: 162px;
+    width: 226.8px;
+}
+
+.t{
+    float: right;
+    clear: both;
+    margin-top: 10%;
+    margin-right: 8%;
+    font-family: "Arial";
+    font-size: 35px;
+    color: red;
+}
+
+.t2{
+    clear: both;
+    float: right;
+    margin-right: 15%;
+    font-family: "Arial";
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.div2{
+    margin-top: 8%;
+    clear: both;
+    float: right;
+    margin-right: 6.2%;
+    font-family: "Arial";
+    font-size: 25px;
+    font-weight: bold;
+}
