@@ -1,4 +1,4 @@
-# Jogo Da Memória
+# Jogo da Memória
 Página web de um jogo da memória criado utilizando html, javascript e css. A temática do jogo é o grupo de k-pop BTS.
 
 ![Screenshot from 2023-04-26 18-56-34](https://user-images.githubusercontent.com/72223107/234712192-e580c91e-23bd-44ba-8769-27a2d3307adc.png)
