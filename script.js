@@ -64,12 +64,13 @@ document.addEventListener ('click', function (event){
     }
 });
 
+//function to do necessary operations at the end of each round
 function finishRound(id){
     count = 0;
 
     //changes the number os attempts
     attempts++;
-    document.getElementById("t2").innerHTML = attempts;
+    document.getElementById("attempts-number").innerHTML = attempts;
 
     //opens the check function
     checkCards(id);
@@ -91,29 +92,15 @@ function checkCards(id){
     }
 }
 
-//function to increase number of attempts
-function increaseCorrectPairs(){
-    pairs++;
-
-    if (pairs==6){
-        //if the 6 pairs are facing up
-        document.getElementById("div2").innerText = "YOU WIN!";
-        document.getElementById("div2").style.color = "green";
-        document.getElementById("div2").style.border = "thick dashed green";
-        document.getElementById("div2").style.padding = "30px";
-    }	
-}
-
 //function to increase the number of correct pairs
 function increaseCorrectPairs(){
     pairs++;
 
     if (pairs==6){
         //if the 6 pairs are facing up
-        document.getElementById("div2").innerText = "YOU WIN!";
-        document.getElementById("div2").style.color = "green";
-        document.getElementById("div2").style.border = "thick dashed green";
-        document.getElementById("div2").style.padding = "30px";
+        document.getElementById("end-game").innerText = "YOU WIN!";
+        document.getElementById("end-game").style.color = "green";
+        document.getElementById("end-game").style.border = "thick dashed green";
     }
 }
 
@@ -126,9 +113,8 @@ function reduceLives(){
     if(lives==0){
         document.getElementById("0").style.display="none";
         //if the lives end
-        document.getElementById("div2").innerText = "GAME OVER!";
-        document.getElementById("div2").style.color = "red";
-        document.getElementById("div2").style.border = "thick dashed red";
-        document.getElementById("div2").style.padding = "30px";
+        document.getElementById("end-game").innerText = "GAME OVER!";
+        document.getElementById("end-game").style.color = "red";
+        document.getElementById("end-game").style.border = "thick dashed red";
     }
 }

@@ -1,48 +1,61 @@
+*{
+    width: 98%;
+    margin: 0.5% 1%;
+}
+
 .lives{
-    float: left;
+    width: 100%;
+    align-self: center;
+    align-items: center;
 }
 
 .life{
     float: left;
-    width: 90px;
-    height: 90px;
-    margin-left: 40px;
+    width: 6%;
+    height: auto;
+    margin: 0 2%;
 }
 
-.div1{
-    clear: left;
+.game-board{
+    width: 100%;
+    margin: 0;
+}
+
+.cards{
+    float: left;
+    width: 70%;
 }
 
 img{
-    height: 162px;
-    width: 226.8px;
+    display: inline-block;
+    width: 20%;
 }
 
-.t{
-    float: right;
-    clear: both;
-    margin-top: 10%;
-    margin-right: 8%;
+.right-corner{
+    float: left;
+    width: 20%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.attempts{
+    margin-top: 20%;
     font-family: "Arial";
     font-size: 35px;
     color: red;
 }
 
-.t2{
-    clear: both;
-    float: right;
-    margin-right: 15%;
+.attempts-number{
     font-family: "Arial";
     font-size: 45px;
     font-weight: bold;
 }
 
-.div2{
-    margin-top: 8%;
-    clear: both;
-    float: right;
-    margin-right: 6.2%;
+.end-game{
+    margin-top: 40%;
     font-family: "Arial";
     font-size: 25px;
     font-weight: bold;
+    padding: 10% 5%;
+    width: 85%;
 }

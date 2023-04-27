@@ -5,3 +5,4 @@
 
 #TODO - Improve the design.
     #Position the elements on the page in a better way.
+#TODO - Create more levels and add different artists pictures
