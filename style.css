@@ -10,7 +10,6 @@
 }
 
 .life{
-    float: left;
     width: 6%;
     height: auto;
     margin: 0 2%;
@@ -29,6 +28,7 @@
 img{
     display: inline-block;
     width: 20%;
+    height: 150px;
 }
 
 .right-corner{

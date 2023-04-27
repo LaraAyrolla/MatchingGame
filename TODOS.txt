@@ -5,4 +5,7 @@
 
 #TODO - Improve the design.
     #Position the elements on the page in a better way.
+#TODO - Add a "play again" button
 #TODO - Create more levels and add different artists pictures
+
+#TODO - Create an indentation pattern for the code
