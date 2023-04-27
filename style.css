@@ -23,7 +23,7 @@
 
 .cards{
     float: left;
-    width: 70%;
+    width: 75%;
 }
 
 img{
@@ -43,7 +43,7 @@ img{
     margin-top: 20%;
     font-family: "Arial";
     font-size: 35px;
-    color: red;
+    color: purple;
 }
 
 .attempts-number{
