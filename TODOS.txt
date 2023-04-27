@@ -1,0 +1,12 @@
+#TODO - Fix the 3rd card bug.
+    #If you click fast enough, 3 cards will turn up and the 3rd will be ignored by the code, not turning down at the end of the round.
+#TODO - Stop the event checker after "game over" or "you win".
+    #If the user clicks on the cards after winning or losing the game, the events will still be register, changing the cards, attempts, lives, and messages.
+
+#TODO - Improve the design.
+    #Position the elements on the page in a better way.
+#TODO - Add a "play again" button
+#TODO - Create more levels and add different artists pictures
+
+#TODO - Create an indentation pattern for the code
+#TODO - Write the game rules on the README.md file
